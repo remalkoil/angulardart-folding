@@ -20,7 +20,7 @@ internal object FileId {
     )
 
     // matching for .dart and .g.dart files
-    private val dartPattern = Pattern.compile("^(.*?)(\\.g\\.dart|\\.dart)$", Pattern.CASE_INSENSITIVE)
+    private val dartPattern = Pattern.compile("^(.*?)(\\.chopper\\.dart|\\.g\\.dart|\\.dart)$", Pattern.CASE_INSENSITIVE)
 
 
     private fun nameFromNode(node: AbstractTreeNode<*>): String? {
